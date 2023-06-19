@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rubikans</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="JS/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container row">
+        <!-- serial -->
+        <div class="col-5">
+            <label>serial</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-5">
+
+        </div>
+        <!-- Current Date -->
+        <div class="col-5">
+            <label>Current Date</label>
+            <input type="date" class="form-control">
+        </div>
+        <!-- Customers -->
+        <div class="col-5">
+            <label >Customers</label>
+            <input type="text" list="customersList" name="customers" id="customers" class="form-control">
+            <datalist id="customersList"></datalist>
+        </div>
+        <!-- Store -->
+        <div class="col-5">
+            <label>Store</label>
+            <input type="text" list="storeList" name="stores" id="stores" class="form-control">
+            <datalist id="storeList"></datalist>
+        </div>
+        <!-- Due Date -->
+        <div class="col-5">
+            <label>Due Date</label>
+            <input type="date" class="form-control">
+        </div>
+        
+        <!-- Description -->
+        <div class="col-10">
+            <label>Description</label>
+            <textarea type="text" class="form-control" rows="4"></textarea>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid mt-3">
+        <table class="table">
+            <thead class="table-primary">
+
+                <tr>
+                    <th scope="col">#            </th>
+                    <th scope="col">Name            </th>
+                    <th scope="col">Quantity        </th>
+                    <th scope="col">Price           </th>
+                    <th scope="col">Cash disc       </th>
+                    <th scope="col">Value           </th>
+                    <th scope="col">Vat             </th>
+                    <th scope="col">Tax value       </th>
+                    <th scope="col">Total invoice   </th>
+                    <th scope="col">Notes           </th>
+                    <th scope="col">Actions         </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="JS/jquery-3.7.0.min.js" ></script>
+    <script src="JS/main.js" ></script>
+</body>
+
+</html>
